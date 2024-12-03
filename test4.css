@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 30px;
+  border: 1px dotted black;
+}
+
+.parent {
+  padding: 20px;
+  border: 1px dotted black;
+}
+
+.item.red {
+  height: 150px;
+  background-color: red;
+  width: 150px;
+  position: relative;
+  overflow: auto;
+}
+
+.item.green {
+  height: 100px;
+  background-color: green;
+  width: 100px;
+}
+
+.item.blue {
+  height: 50px;
+  background-color: blue;
+  width: 50px;
+}
+
+.section-title {
+  background: burlywood;
+  position: sticky;
+  top: 0;
+}
