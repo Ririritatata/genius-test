@@ -46,7 +46,9 @@
               </li>
             </ul>
           </nav>
-          <button class="button" type="button">Замовити дзвінок</button>
+          <button class="button modal-btn-open" type="button">
+            Замовити дзвінок
+          </button>
         </div>
       </div>
     </header>
@@ -195,7 +197,7 @@
                 </article>
               </li>
             </ul>
-            <button class="carousel-button" type="button">
+            <button class="carousel-button next" type="button">
               <svg width="16" height="16">
                 <use href="./images/icons.svg#icon-Arrow"></use>
               </svg>
@@ -211,8 +213,80 @@
                 Приєднуйся до мережі пекарень
               </h2>
               <p>Заповни форму, щоб ми звʼязались з тобою!</p>
+              <form name="contact-form" autocomplete="off">
+                <!-- <label for="user-name">Ім’я</label>
+          <input type="text" id="user-name" name="user-name" />
+
+          <label for="Small">Small</label>
+          <input type="radio" id="Small" name="size" />
+
+          <label for="Medium">Medium</label>
+          <input type="checkbox" id="Medium" name="size-m" />
+
+          <label for="Large">Large</label>
+          <input type="radio" id="Large" name="size" /> -->
+                <!-- <fieldset>
+            <legend>Контактна інформація</legend> -->
+                <div class="form-field">
+                  <label class="form-lable visually-hidden" for="user-name"
+                    >Ім’я</label
+                  >
+                  <input
+                    class="form-input"
+                    type="text"
+                    name="user-name"
+                    id="user-name"
+                    placeholder="Ім’я"
+                  />
+                </div>
+                <div class="form-field">
+                  <label class="form-lable visually-hidden" for="user-tel"
+                    >Телефон</label
+                  >
+                  <input
+                    class="form-input"
+                    type="tel"
+                    name="user-tel"
+                    id="user-tel"
+                    placeholder="Телефон"
+                  />
+                </div>
+                <div class="form-field">
+                  <label class="form-lable visually-hidden" for="user-email"
+                    >Електронна пошта</label
+                  >
+                  <input
+                    class="form-input"
+                    type="email"
+                    name="user-email"
+                    id="user-email"
+                    placeholder="Електронна пошта"
+                  />
+                </div>
+
+                <!-- </fieldset>
+
+          <fieldset>
+            <legend>Додадкова інформація</legend>
+            <select name="" id="">
+              <option value="">Small</option>
+              <option value="">Medium</option>
+              <option value="">Large</option>
+            </select>
+          </fieldset> -->
+
+                <button class="form-button button" type="submit">
+                  Замовити дзвінок
+                </button>
+                <p class="form-terms">
+                  Натискаючи на кнопку я погоджуюсь
+                  <a class="form-terms-link" href="#">
+                    з політикою конфіденційності</a
+                  >
+                </p>
+              </form>
             </div>
-            <!-- form -->
+
             <iframe
               class="contact-map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1636289098733!2d30.4912733!3d50.4566776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637c006b2d%3A0xaf86385f19996ff0!2z0YPQuy4g0KHQtdGH0LXQstGL0YUg0KHRgtGA0LXQu9GM0YbQvtCyLCA1NCwg0JrQuNC10LIsINCj0LrRgNCw0LjQvdCwLCAwMjAwMA!5e0!3m2!1sru!2sde!4v1732617608912!5m2!1sru!2sde"
@@ -289,5 +363,85 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop">
+      <div class="modal">
+        <button class="modal-btn-close" type="button">Close</button>
+        <h2>Замовити дзвінок</h2>
+        <p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
+        <form name="modal-form" autocomplete="on" novalidate>
+          <!-- <label for="user-name">Ім’я</label>
+          <input type="text" id="user-name" name="user-name" />
+
+          <label for="Small">Small</label>
+          <input type="radio" id="Small" name="size" />
+
+          <label for="Medium">Medium</label>
+          <input type="checkbox" id="Medium" name="size-m" />
+
+          <label for="Large">Large</label>
+          <input type="radio" id="Large" name="size" /> -->
+          <!-- <fieldset>
+            <legend>Контактна інформація</legend> -->
+          <div class="form-field">
+            <label class="form-lable visually-hidden" for="user-name"
+              >Ім’я</label
+            >
+            <input
+              class="form-input"
+              type="text"
+              name="user-name"
+              id="user-name"
+              placeholder="Ім’я"
+            />
+          </div>
+          <div class="form-field">
+            <label class="form-lable visually-hidden" for="user-tel"
+              >Телефон</label
+            >
+            <input
+              class="form-input"
+              type="tel"
+              name="user-tel"
+              id="user-tel"
+              placeholder="Телефон"
+            />
+          </div>
+          <div class="form-field">
+            <label class="form-lable visually-hidden" for="user-email"
+              >Електронна пошта</label
+            >
+            <input
+              class="form-input"
+              type="email"
+              name="user-email"
+              id="user-email"
+              placeholder="Електронна пошта"
+            />
+          </div>
+
+          <!-- </fieldset>
+
+          <fieldset>
+            <legend>Додадкова інформація</legend>
+            <select name="" id="">
+              <option value="">Small</option>
+              <option value="">Medium</option>
+              <option value="">Large</option>
+            </select>
+          </fieldset> -->
+
+          <button class="form-button button" type="submit">
+            Замовити дзвінок
+          </button>
+          <p class="form-terms">
+            Натискаючи на кнопку я погоджуюсь
+            <a class="form-terms-link" href="#">
+              з політикою конфіденційності</a
+            >
+          </p>
+        </form>
+      </div>
+    </div>
+    <script src="/js/modal.js"></script>
   </body>
 </html>
