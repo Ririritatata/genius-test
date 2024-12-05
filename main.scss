@@ -1,0 +1,64 @@
+@import './utils/fonts';
+
+@import './utils/variables';
+
+/* Base */
+@import './base';
+
+@import './utils/utils';
+
+.section {
+    padding: 48px 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1288px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Button */
+@import './components/buttons';
+
+/* Link */
+@import './components/links';
+
+/* Mixin */
+@import './utils/mixins';
+
+/* Header */
+@import './components/header';
+
+/* Hero section*/
+@import './components/hero-section';
+
+/* Advantages section */
+@import './components/advantages-section';
+
+/* Section-title */
+@import './components/section-title';
+
+/* Traditions section */
+@import './components/tradition-section';
+
+/* Chef section */
+@import './components/chef-titles';
+
+/* Formats section*/
+@import './components/formats-section';
+
+/* Carousel */
+@import './components/carousel';
+
+/* Contact section */
+@import './components/contact-section';
+
+/* Footer */
+@import './components/footer';
+
+/* ­Modal */
+@import './components/modal';
+
+/* Form */
+@import './components/form';

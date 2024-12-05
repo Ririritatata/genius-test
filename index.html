@@ -13,7 +13,7 @@
       rel="stylesheet"
     />-->
     <!-- Styles -->
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="header">
@@ -162,6 +162,11 @@
             <ul class="formats-list">
               <li class="formats-item">
                 <article class="format-card">
+                  <img
+                    class="format-image"
+                    src="./images/Walrus-format.jpg"
+                    alt="Walrus format"
+                  />
                   <h3 class="format-title" lang="en">Walrus</h3>
                   <div class="format-text">
                     <p>Площа: до 120 м2</p>
@@ -176,6 +181,11 @@
               </li>
               <li class="formats-item">
                 <article class="format-card">
+                  <img
+                    class="format-image"
+                    src="./images/Horseshoe-format.jpg"
+                    alt="Horseshoe format"
+                  />
                   <h3 class="format-title" lang="en">Horseshoe</h3>
                   <div class="format-text">
                     <p>Площа: до 25 м2</p>
@@ -187,6 +197,12 @@
               </li>
               <li class="formats-item">
                 <article class="format-card">
+                  <img
+                    class="format-image"
+                    src="./images/Handelbar-formats.jpg"
+                    alt="Handlebar format"
+                  />
+
                   <h3 class="format-title" lang="en">Handlebar</h3>
                   <div class="format-text">
                     <p>Площа: до 15 м2</p>
@@ -368,7 +384,7 @@
         <button class="modal-btn-close" type="button">Close</button>
         <h2>Замовити дзвінок</h2>
         <p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
-        <form name="modal-form" autocomplete="on" novalidate>
+        <form name="modal-form" autocomplete="off">
           <!-- <label for="user-name">Ім’я</label>
           <input type="text" id="user-name" name="user-name" />
 
@@ -392,6 +408,7 @@
               name="user-name"
               id="user-name"
               placeholder="Ім’я"
+              required
             />
           </div>
           <div class="form-field">
@@ -404,6 +421,8 @@
               name="user-tel"
               id="user-tel"
               placeholder="Телефон"
+              pattern="^+\[0-9]{12}"
+              required
             />
           </div>
           <div class="form-field">
@@ -416,6 +435,7 @@
               name="user-email"
               id="user-email"
               placeholder="Електронна пошта"
+              required
             />
           </div>
 
@@ -429,6 +449,17 @@
               <option value="">Large</option>
             </select>
           </fieldset> -->
+          <!-- <div class="checkbox">
+            <input
+              class="checkbox-input visually-hidden"
+              type="checkbox"
+              id="terms-conditions"
+              name="terms-conditions"
+            />
+            <label class="checkbox-label" for="terms-conditions">
+              Я точно погоджуюсь
+            </label>
+          </div> -->
 
           <button class="form-button button" type="submit">
             Замовити дзвінок
