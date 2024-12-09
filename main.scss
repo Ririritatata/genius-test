@@ -7,15 +7,13 @@
 
 @import './utils/utils';
 
-.section {
-    padding: 48px 0;
-}
+@import './utils/texts';
 
 .container {
-    width: 100%;
-    max-width: 1288px;
-    margin: 0 auto;
-    padding: 0 24px;
+  width: 100%;
+  max-width: 1288px;
+  margin: 0 auto;
+  padding: 0 24px;
 }
 
 /* Button */
@@ -37,13 +35,15 @@
 @import './components/advantages-section';
 
 /* Section-title */
-@import './components/section-title';
+@import './components/section';
 
 /* Traditions section */
 @import './components/tradition-section';
 
 /* Chef section */
-@import './components/chef-titles';
+@import './components/chefs-section';
+
+@import './components/chef-card';
 
 /* Formats section*/
 @import './components/formats-section';
@@ -61,4 +61,10 @@
 @import './components/modal';
 
 /* Form */
-@import './components/form';
+@import './components/form-terms';
+
+@import './components/format-card';
+
+@import './components/input';
+
+@import './components/mobile-menu';
